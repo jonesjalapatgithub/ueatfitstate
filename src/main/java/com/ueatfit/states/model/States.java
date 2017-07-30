@@ -18,7 +18,7 @@ public class States {
 	@Column(name = "id")
 	private Long id;
 	@Column(name = "state_name")
- 	private String stateName;
+ 	private String name;
 	@Column(name = "state_code")
  	private int stateCode;
 	@Column(name = "state_description")
@@ -31,11 +31,11 @@ public class States {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public String getStateName() {
-		return stateName;
+	public String getName() {
+		return name;
 	}
-	public void setStateName(String stateName) {
-		this.stateName = stateName;
+	public void setName(String name) {
+		this.name = name;
 	}
 	public int getStateCode() {
 		return stateCode;
