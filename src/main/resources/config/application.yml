@@ -30,7 +30,7 @@ spring:
     maxPoolSize: 10
   jpa: 
     hibernate:
-      ddl-auto: create
+      ddl-auto: create or update
       show_sql: true
       format_sql: true
       dialect: org.hibernate.dialect.MySQLDialect

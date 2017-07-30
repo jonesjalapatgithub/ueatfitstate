@@ -20,7 +20,7 @@ public class States {
 	@Column(name = "state_name")
  	private String stateName;
 	@Column(name = "state_code")
- 	private String stateCode;
+ 	private int stateCode;
 	@Column(name = "state_description")
     private String stateDescription;
 	@Column(name = "country_code")
@@ -37,10 +37,10 @@ public class States {
 	public void setStateName(String stateName) {
 		this.stateName = stateName;
 	}
-	public String getStateCode() {
+	public int getStateCode() {
 		return stateCode;
 	}
-	public void setStateCode(String stateCode) {
+	public void setStateCode(int stateCode) {
 		this.stateCode = stateCode;
 	}
 	public String getStateDescription() {
