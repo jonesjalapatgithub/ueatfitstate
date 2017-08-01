@@ -54,11 +54,11 @@ public class StatesController {
      * @return A String containing a HTTP status code as described in the method
      *         comment.
      */
-    @RequestMapping(value = "/states/{stateName}", method = RequestMethod.GET)
+    @RequestMapping(value = "/states/{stateId}", method = RequestMethod.GET)
     @CrossOrigin(origins = "http://127.0.0.1:3000")
-    public ResponseEntity<List<States>> getStates(@PathVariable(value = "stateName") final String stateName) {
+    public ResponseEntity<List<States>> getStates(@PathVariable(value = "stateId") final String stateId) {
     	return new ResponseEntity<List<States>>(statesDao.findByStateCode(
-    			Integer.parseInt(stateName)),HttpStatus.CREATED);
+    			Integer.parseInt(stateId)),HttpStatus.CREATED);
     }
 	
     /**

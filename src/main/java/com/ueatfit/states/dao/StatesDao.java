@@ -8,7 +8,7 @@ import org.springframework.data.rest.core.annotation.RestResource;
 import com.ueatfit.states.model.States;
 
 @RestResource(path="statesdet")
-public interface StatesDao extends JpaRepository<States, String>{
+public interface StatesDao extends JpaRepository<States, Long>{
 
 	List<States> findByStateCode(int stateId);
 
